@@ -11,7 +11,7 @@
 
 ### Coordinate System
 ![ARM_5](https://github.com/GreatCong/ARM_CNC_F4/blob/STM32F4/STM32F4/Tutorial/img/ARM_5.jpg)
-![ARM_6](https://github.com/GreatCong/ARM_CNC_F4/blob/STM32F4/STM32F4/Tutorial/img/ARM_6jpg)
+![ARM_6](https://github.com/GreatCong/ARM_CNC_F4/blob/STM32F4/STM32F4/Tutorial/img/ARM_6.jpg)
 
 ### Some Parameter
 ![ARM_4](https://github.com/GreatCong/ARM_CNC_F4/blob/STM32F4/STM32F4/Tutorial/img/ARM_4.jpg)
