@@ -90,6 +90,8 @@
 #define GPIO_LIM_Y_GPIO_Port GPIOE
 #define GPIO_LIM_Z_Pin GPIO_PIN_15
 #define GPIO_LIM_Z_GPIO_Port GPIOE
+#define LED_BOOT_Pin GPIO_PIN_12
+#define LED_BOOT_GPIO_Port GPIOB
 #define LED_STATE_Pin GPIO_PIN_13
 #define LED_STATE_GPIO_Port GPIOB
 #define GPIO_CTRL_RST_Pin GPIO_PIN_1

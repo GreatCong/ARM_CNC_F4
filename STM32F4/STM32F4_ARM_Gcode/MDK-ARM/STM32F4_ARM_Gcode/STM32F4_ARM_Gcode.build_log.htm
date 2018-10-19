@@ -22,11 +22,178 @@ Dialog DLL:      TCM.DLL V1.35.1.0
  
 <h2>Project:</h2>
 D:\desktop_hust\STM32F4_ARM_Gcode\MDK-ARM\STM32F4_ARM_Gcode.uvprojx
-Project File Date:  10/18/2018
+Project File Date:  10/19/2018
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
-Build target 'STM32F4_ARM_Gcode'
+Rebuild target 'STM32F4_ARM_Gcode'
+assembling startup_stm32f407xx.s...
+compiling i2c.c...
+compiling gpio.c...
+compiling main.c...
+compiling tim.c...
+compiling spi.c...
+compiling usart.c...
+compiling stm32f4xx_hal_msp.c...
+compiling stm32f4xx_it.c...
+compiling usb_otg.c...
+compiling stm32f4xx_hal_i2c_ex.c...
+compiling stm32f4xx_hal_spi.c...
+compiling stm32f4xx_hal_i2c.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling stm32f4xx_hal_uart.c...
+compiling stm32f4xx_hal_tim.c...
+compiling stm32f4xx_hal_pcd_ex.c...
+compiling stm32f4xx_hal_pcd.c...
+compiling stm32f4xx_ll_usb.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal.c...
+compiling GCode.c...
+..\Hardware\grbl\GCode.c(462): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				if(value < 0.0) {
+..\Hardware\grbl\GCode.c(540): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			gc_block.values.f *= MM_PER_INCH;
+..\Hardware\grbl\GCode.c(572): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  						gc_block.values.f *= MM_PER_INCH;
+..\Hardware\grbl\GCode.c(643): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				gc_block.values.xyz[idx] *= MM_PER_INCH;
+..\Hardware\grbl\GCode.c(895): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			if(gc_block.values.f == 0.0) {
+..\Hardware\grbl\GCode.c(945): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  						gc_block.values.r *= MM_PER_INCH;
+..\Hardware\grbl\GCode.c(997): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  					float h_x2_div_d = 4.0 * gc_block.values.r*gc_block.values.r - x*x - y*y;
+..\Hardware\grbl\GCode.c(1036): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  					gc_block.values.ijk[axis_0] = 0.5*(x-(y*h_x2_div_d));
+..\Hardware\grbl\GCode.c(1037): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  					gc_block.values.ijk[axis_1] = 0.5*(y+(x*h_x2_div_d));
+..\Hardware\grbl\GCode.c(1051): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  									gc_block.values.ijk[idx] *= MM_PER_INCH;
+..\Hardware\grbl\GCode.c(1067): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  						if(delta_r > 0.005) {
+..\Hardware\grbl\GCode.c(1068): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  							if(delta_r > 0.5) {
+..\Hardware\grbl\GCode.c(1072): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  							if(delta_r > (0.001*gc_block.values.r)) {
+..\Hardware\grbl\GCode.c: 13 warnings, 0 errors
+compiling Jog.c...
+compiling system_stm32f4xx.c...
+compiling MotionControl.c...
+..\Hardware\grbl\MotionControl.c(130): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		if(angular_travel <= ARC_ANGULAR_TRAVEL_EPSILON) {
+..\Hardware\grbl\MotionControl.c(139): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	uint16_t segments = floor(fabs(0.5*angular_travel*radius) / sqrt(settings.arc_tolerance*(2*radius - settings.arc_tolerance)));
+..\Hardware\grbl\MotionControl.c(179): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		float cos_T = 2.0 - theta_per_segment*theta_per_segment;
+..\Hardware\grbl\MotionControl.c(180): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		float sin_T = theta_per_segment*0.16666667*(cos_T + 4.0);
+..\Hardware\grbl\MotionControl.c(180): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		float sin_T = theta_per_segment*0.16666667*(cos_T + 4.0);
+..\Hardware\grbl\MotionControl.c(181): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		cos_T *= 0.5;
+..\Hardware\grbl\MotionControl.c: 6 warnings, 0 errors
+compiling Planner.c...
+..\Hardware\grbl\Planner.c(180): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		if(delta_mm < 0.0) {
+..\Hardware\grbl\Planner.c(247): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		if(junction_cos_theta > 0.999999) {
+..\Hardware\grbl\Planner.c(258): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				float sin_theta_d2 = sqrt(0.5*(1.0-junction_cos_theta)); // Trig half angle identity. Always positive.
+..\Hardware\grbl\Planner.c(260): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				block->max_junction_speed_sqr = max(MINIMUM_JUNCTION_SPEED*MINIMUM_JUNCTION_SPEED, (junction_acceleration * settings.junction_deviation * sin_theta_d2)/(1.0-sin_theta_d2));
+..\Hardware\grbl\Planner.c(260): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				block->max_junction_speed_sqr = max(MINIMUM_JUNCTION_SPEED*MINIMUM_JUNCTION_SPEED, (junction_acceleration * settings.junction_deviation * sin_theta_d2)/(1.0-sin_theta_d2));
+..\Hardware\grbl\Planner.c(362): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	if(nominal_speed > MINIMUM_FEED_RATE) {
+..\Hardware\grbl\Planner.c: 6 warnings, 0 errors
+compiling CoolantControl.c...
+compiling Limits.c...
+..\Hardware\grbl\Limits.c(296): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			max_travel = settings.homing_pulloff*HOMING_AXIS_LOCATE_SCALAR;
+..\Hardware\grbl\Limits.c: 1 warning, 0 errors
+compiling Probe.c...
+compiling Protocol.c...
+..\Hardware\grbl\Protocol.c(212): warning:  #111-D: statement is unreachable
+  	return; /* Never reached */
+..\Hardware\grbl\Protocol.c: 1 warning, 0 errors
+compiling Report.c...
+compiling SpindleControl.c...
+..\Hardware\grbl\SpindleControl.c(128): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		if(rpm == 0.0) { // S0 disables spindle
+..\Hardware\grbl\SpindleControl.c: 1 warning, 0 errors
+compiling Settings.c...
+..\Hardware\grbl\Settings.c(234): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	if(value < 0.0) {
+..\Hardware\grbl\Settings.c: 1 warning, 0 errors
+compiling Stepper.c...
+..\Hardware\grbl\Stepper.c(739): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				prep.req_mm_increment = REQ_MM_INCREMENT_SCALAR/prep.step_per_mm;
+..\Hardware\grbl\Stepper.c(759): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  						prep.inv_rate = 1.0/pl_block->programmed_rate;
+..\Hardware\grbl\Stepper.c(772): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			float inv_2_accel = 0.5/pl_block->acceleration;
+..\Hardware\grbl\Stepper.c(781): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				if(decel_dist < 0.0) {
+..\Hardware\grbl\Stepper.c(809): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				float intersect_distance = 0.5*(pl_block->millimeters+inv_2_accel*(pl_block->entry_speed_sqr-exit_speed_sqr));
+..\Hardware\grbl\Stepper.c(813): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  					if(prep.accelerate_until <= 0.0) { // Deceleration-only.
+..\Hardware\grbl\Stepper.c(832): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				} else if(intersect_distance > 0.0) {
+..\Hardware\grbl\Stepper.c(851): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  							prep.maximum_speed = sqrt(2.0*pl_block->acceleration*intersect_distance+exit_speed_sqr);
+..\Hardware\grbl\Stepper.c(897): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		if(minimum_mm < 0.0) {
+..\Hardware\grbl\Stepper.c(906): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				mm_var = time_var*(prep.current_speed - 0.5*speed_var);
+..\Hardware\grbl\Stepper.c(912): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  					time_var = 2.0*(pl_block->millimeters-mm_remaining)/(prep.current_speed+prep.maximum_speed);
+..\Hardware\grbl\Stepper.c(924): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				mm_remaining -= time_var*(prep.current_speed + 0.5*speed_var);
+..\Hardware\grbl\Stepper.c(929): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  					time_var = 2.0*(pl_block->millimeters-mm_remaining)/(prep.current_speed+prep.maximum_speed);
+..\Hardware\grbl\Stepper.c(965): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  					mm_var = mm_remaining - time_var*(prep.current_speed - 0.5*speed_var); // (mm)
+..\Hardware\grbl\Stepper.c(974): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				time_var = 2.0*(mm_remaining-prep.mm_complete)/(prep.current_speed+prep.exit_speed);
+..\Hardware\grbl\Stepper.c(1113): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			if(mm_remaining > 0.0) { // At end of forced-termination.
+..\Hardware\grbl\Stepper.c: 16 warnings, 0 errors
+compiling util.c...
+..\Hardware\grbl\util.c(96): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			fval *= 0.01;
+..\Hardware\grbl\util.c(100): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			fval *= 0.1;
+..\Hardware\grbl\util.c(104): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				fval *= 10.0;
+..\Hardware\grbl\util.c(170): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		if(vector[idx] != 0.0) {
+..\Hardware\grbl\util.c(176): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	float inv_magnitude = 1.0/magnitude;
+..\Hardware\grbl\util.c: 5 warnings, 0 errors
+compiling eeprom.c...
+..\Hardware\grbl\HAL\eeprom.c(161): warning:  #177-D: function "GetSectorSize"  was declared but never referenced
+  static uint32_t GetSectorSize(uint32_t Sector)
+..\Hardware\grbl\HAL\eeprom.c: 1 warning, 0 errors
+compiling System.c...
+..\Hardware\grbl\System.c(187): warning:  #111-D: statement is unreachable
+  		break;
+..\Hardware\grbl\System.c: 1 warning, 0 errors
+compiling HW_GPIO.c...
+compiling FIFO_USART.c...
+compiling HW_TIM.c...
+compiling System32.c...
+compiling HW_USART.c...
 compiling Arm_motion.c...
 ..\Hardware\Global\Arm_motion.c(88): warning:  #1035-D: single-precision operand implicitly converted to double-precision
   	y1=sin(cartesian_theta[X_AXIS]/ARM_RAD2DEG)*BIG_ARM_LENGTH-sin(cartesian_theta[Y_AXIS]/ARM_RAD2DEG)*SMALL_ARM_LENGTH;
@@ -40,17 +207,26 @@ compiling Arm_motion.c...
   	x2 = x1 *cos(cartesian_theta[Z_AXIS]/ARM_RAD2DEG);
 ..\Hardware\Global\Arm_motion.c(94): warning:  #1035-D: single-precision operand implicitly converted to double-precision
   	y2 = x1 *sin(cartesian_theta[Z_AXIS]/ARM_RAD2DEG);
-..\Hardware\Global\Arm_motion.c(135): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\Hardware\Global\Arm_motion.c(138): warning:  #1035-D: single-precision operand implicitly converted to double-precision
   	arm_motion_temp.arm[X_AXIS] = TempX*ARM_RAD2DEG;//弧度转化为角度
-..\Hardware\Global\Arm_motion.c(136): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\Hardware\Global\Arm_motion.c(139): warning:  #1035-D: single-precision operand implicitly converted to double-precision
   	arm_motion_temp.arm[Y_AXIS] = 180-arm_motion_temp.arm[X_AXIS]-TempY*ARM_RAD2DEG;
-..\Hardware\Global\Arm_motion.c(137): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+..\Hardware\Global\Arm_motion.c(140): warning:  #1035-D: single-precision operand implicitly converted to double-precision
   	arm_motion_temp.arm[Z_AXIS] = TempZ*ARM_RAD2DEG;
 ..\Hardware\Global\Arm_motion.c: 9 warnings, 0 errors
+compiling Print.c...
+..\Hardware\grbl\HAL\Debug\Print.c(68): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	n += 0.5; // Add rounding factor. Ensures carryover through entire value.
+..\Hardware\grbl\HAL\Debug\Print.c(125): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		PrintFloat(n*INCH_PER_MM,N_DECIMAL_COORDVALUE_INCH);
+..\Hardware\grbl\HAL\Debug\Print.c(135): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		PrintFloat(n*INCH_PER_MM,N_DECIMAL_RATEVALUE_INCH);
+..\Hardware\grbl\HAL\Debug\Print.c: 3 warnings, 0 errors
+compiling Global.c...
 linking...
-Program Size: Code=43002 RO-data=1138 RW-data=96 ZI-data=10456  
+Program Size: Code=43182 RO-data=1134 RW-data=96 ZI-data=10456  
 FromELF: creating hex file...
-"STM32F4_ARM_Gcode\STM32F4_ARM_Gcode.axf" - 0 Error(s), 9 Warning(s).
+"STM32F4_ARM_Gcode\STM32F4_ARM_Gcode.axf" - 0 Error(s), 64 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -73,7 +249,7 @@ Package Vendor: Keil
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.1.1
-Build Time Elapsed:  00:00:04
+Build Time Elapsed:  00:02:53
 </pre>
 </body>
 </html>

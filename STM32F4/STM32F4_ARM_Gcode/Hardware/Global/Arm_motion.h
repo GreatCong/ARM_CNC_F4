@@ -5,6 +5,7 @@
 
 #define ARM //定义机械臂
 #define ARM_Init_SCRIPT //初始化G代码
+#define ARM_PEINT_DEBUG //debug
 
 #define ARM_STATE_LOCK_MOTOR         				BIT(0) // In alarm state. Locks out all g-code processes. Allows settings access.
 //#define ARM_STATE_CHECK_MODE    				BIT(1) // G-code check mode. Locks out planner and motion only.

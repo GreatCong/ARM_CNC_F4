@@ -144,6 +144,18 @@ void Grbl_loop(void){
 		// Start Grbl-Advanced main loop. Processes program inputs and executes them.
 		Protocol_MainLoop();//任务循环
 }
+
+//  @ fuction:  
+//  @ description: Boot 
+//  @ input:
+//  @ output:
+//  @ note: 
+void Boot_State(uint8_t num,uint16_t time_delay){
+  for(int i=0;i<num;i++){
+	  HAL_GPIO_TogglePin(LED_BOOT_GPIO_Port,LED_BOOT_Pin);
+		HAL_Delay(time_delay);
+	}
+}
 /* USER CODE END 0 */
 
 /**
@@ -183,7 +195,7 @@ int main(void)
   MX_SPI3_Init();
   /* USER CODE BEGIN 2 */
   //Motor_Setting_init();//设置A4988的分频
-	
+	Boot_State(4,500);//boot
   Grbl_setup();
 
   /* USER CODE END 2 */

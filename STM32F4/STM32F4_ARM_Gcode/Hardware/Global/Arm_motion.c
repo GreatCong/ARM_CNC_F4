@@ -122,6 +122,9 @@ ARM_Motion_s calculate_arm(const float *cartesian)
 	
 	if(check_angle(BIG_ARM_LENGTH,SMALL_ARM_LENGTH,TempXYZ)){
 	  arm_motion_temp.transfer_state = 1;//error
+		#ifdef ARM_PEINT_DEBUG
+		Printf_MSG("[Calculate_arm Error!]\r\n");//打印错误信息
+		#endif
 	}
 	else{
 	 	arm_motion_temp.transfer_state = 0;//no error
@@ -165,10 +168,12 @@ void Arm_motion_reset(void){
 	arm_position_init.arm[Y_AXIS] = 0;
 	arm_position_init.arm[Z_AXIS] = 0;
 	
-//	//打印初始位置坐标，便于调试
-//	ARM_Motion_s arm_position_debug;
-//	arm_position_debug = calculate_forward(arm_position_init.arm);
-//	Printf_MSG("[Arm=(%f,%f,%f)]\r\n",arm_position_debug.arm[X_AXIS],arm_position_debug.arm[Y_AXIS],arm_position_debug.arm[Z_AXIS]);
+	#ifdef ARM_PEINT_DEBUG
+  //打印初始位置坐标，便于调试
+	ARM_Motion_s arm_position_debug;
+	arm_position_debug = calculate_forward(arm_position_init.arm);
+	Printf_MSG("[Arm=(%f,%f,%f)]\r\n",arm_position_debug.arm[X_AXIS],arm_position_debug.arm[Y_AXIS],arm_position_debug.arm[Z_AXIS]);
+	#endif
 	
 	
 	for(int idx = 0; idx < 3; idx++) { //只用了3轴
